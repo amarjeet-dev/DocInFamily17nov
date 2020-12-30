@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_7sdp"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_7sdp">
+<ImageView
+    android:layout_width="@dimen/_140sdp"
+    android:layout_height="@dimen/_140sdp"
+    android:gravity="center"
+    android:id="@+id/rl_background"
+  />
+    <RelativeLayout
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_logo"
+        android:layout_centerInParent="true"
+        android:background="@drawable/medicalic"
+      />
+    <textfont.TextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="medications"
+        android:id="@+id/tv_name"
+android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/white"/>
+    </RelativeLayout>
+</RelativeLayout>

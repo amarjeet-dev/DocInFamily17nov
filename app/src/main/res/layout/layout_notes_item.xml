@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_margin="@dimen/_3sdp"
+     >
+   <RelativeLayout
+        android:id="@+id/rl_delete"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+       android:layout_alignParentRight="true"
+        android:background="@drawable/deleteback">
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/ic_delete" />
+   </RelativeLayout>
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_48sdp"
+    android:layout_margin="@dimen/_3sdp"
+    android:id="@+id/view_forground"
+
+    android:background="@drawable/rect_grey_outline">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:gravity="center"
+    android:id="@+id/rl_tit_t"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:background="@drawable/ic_chat_small"/>
+    <textfont.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dolor sit amet"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="@color/white_black"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:id="@+id/tv_title"/>
+    <textfont.TextViewLight
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6:30 PM"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:textColor="@color/white_black"
+        android:textSize="@dimen/_8ssp"
+        android:id="@+id/tv_time"/>
+
+</LinearLayout>
+    <textfont.TextViewLight
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="wrap_content"
+        android:text="At the top of the notes section.."
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_below="@+id/rl_tit_t"
+        android:layout_marginLeft="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:textSize="@dimen/_8ssp"
+        android:textColor="@color/white_black"
+        android:id="@+id/tv_dis"/>
+    <ImageView
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_share_app"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:id="@+id/iv_share"/>
+</RelativeLayout>
+</FrameLayout>
+</layout>

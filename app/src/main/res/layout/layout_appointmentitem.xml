@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/rl_item"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        >
+
+        <textfont.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white_black"
+            android:textSize="@dimen/_11ssp"
+            android:id="@+id/tv_title"
+            android:layout_marginLeft="@dimen/_5sdp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/rl_date"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_below="@+id/tv_title"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/calendar_blue"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+
+                android:id="@+id/iv_cal"/>
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 sept, 2020"
+          android:layout_toRightOf="@+id/iv_cal"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/consu"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_3sdp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/rl_date"
+            android:layout_below="@+id/tv_title"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_time_cons"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/iv_time"/>
+
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:30 AM"
+                android:layout_toRightOf="@+id/iv_time"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/consu"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_3sdp"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_right_arrow"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/light_grey1"
+        android:layout_marginTop="@dimen/_8sdp"
+       />
+</LinearLayout>

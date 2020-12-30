@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isVisible"
+            type="boolean" />
+
+        <variable
+            name="isProgressShown"
+            type="boolean" />
+
+        <variable
+            name="message"
+            type="String" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- email -->
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/white_black"
+                app:hintTextAppearance="@style/HintTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:inputType="text|textCapWords"
+android:textSize="@dimen/_10ssp"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <!-- Password -->
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_email"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Password"
+                android:textColorHint="@color/white_black"
+                app:hintTextAppearance="@style/HintTextStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center|left"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/_10ssp"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_remeber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_password">
+
+            <RelativeLayout
+                android:id="@+id/rl_rember_uncheck"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_uncheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rember_uncheck" />
+
+                <textfont.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/iv_uncheck"
+                    android:text="Remember me"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_rember_check"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_rember_check" />
+
+                <textfont.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/iv_check"
+                    android:text="Remember me"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_remeber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/login" />
+
+        <textfont.TextViewLight
+            android:id="@+id/tv_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/iv_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Forgot Password?"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_11ssp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_ff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@+id/tv_forgot">
+
+            <TextView
+                android:id="@+id/tv_also"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Also Login With"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_10ssp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_also"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rl_face"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/log_authback">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_face_detection" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_finger"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_toRightOf="@+id/rl_face"
+                    android:background="@drawable/log_authback">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_fingerprintp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_btw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@+id/rl_ff"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_25sdp">
+
+            <View
+                android:id="@+id/vv1"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:background="@color/light_grey" />
+
+            <textfont.TextViewLight
+                android:id="@+id/tv_or"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="OR"
+                android:textColor="@color/light_grey" />
+
+            <View
+                android:id="@+id/vv2"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@color/light_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_google"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/rl_btw"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/social_bg"
+            android:gravity="center">
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/login_with_google"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:visibility="invisible"
+             android:layout_centerInParent="true"
+                android:layout_height="@dimen/_35sdp" />
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/google_plus"
+                android:text="Sign in with "
+                android:layout_centerInParent="true"
+                android:textColor="@color/royal_blue_whit"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/social_bg"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_below="@+id/rl_google"
+            android:id="@+id/rl_fb">
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+
+                android:visibility="invisible"
+             android:layout_centerInParent="true"
+
+                />
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in with "
+                android:drawableRight="@drawable/fb"
+                android:textSize="@dimen/_10ssp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/royal_blue_whit"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@+id/rl_fb"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/rl_signup">
+        <textfont.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+        android:textColor="@color/white_black"
+            android:textSize="@dimen/_10ssp"
+            android:id="@+id/tv_dont"/>
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:layout_toRightOf="@+id/tv_dont"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/_10ssp"
+                android:id="@+id/tv_sign"/>
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_in"
+            android:visibility="@{!isProgressShown ? View.GONE : View.VISIBLE}" />
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</layout>

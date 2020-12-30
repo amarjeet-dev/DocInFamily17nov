@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/royal_blue"
+        android:layout_marginLeft="@dimen/_4sdp"
+        app:riv_border_color="@color/white"
+        app:riv_corner_radius="@dimen/_8sdp"
+        app:riv_mutate_background="true"
+        app:riv_oval="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:orientation="vertical">
+        <textfont.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I don't understand the treatment"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/white_black"
+            android:textSize="@dimen/_11ssp"
+            android:id="@+id/tv_title"/>
+        <textfont.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I don't understand the treatment, I don't understand the treatment.I don't understand the treatment.I don't understand the treatment.I don't understand the treatment."
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="@color/consu"
+            android:textSize="@dimen/_9ssp"
+            android:id="@+id/tv_description"/>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:weightSum="3"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1.1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_video_cons"/>
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Video "
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/white_black"
+                android:id="@+id/tv_video"/>
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:50 min.s"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/white_black"
+                android:id="@+id/tv_video_time"/>
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_8sdp"
+            android:background="@color/grey_white"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1.1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_calender_cons"/>
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 13-Oct-2020"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/white_black"
+                android:id="@+id/tv_date"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_8sdp"
+            android:background="@color/grey_white"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight=".8">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_calender_cons"/>
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 10:30 am"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/white_black"
+                android:id="@+id/tv_timee"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/grey_white"
+     />
+</LinearLayout>
+</layout>

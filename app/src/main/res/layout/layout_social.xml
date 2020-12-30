@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <textfont.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Social History"
+                android:textColor="@color/white_black"
+                android:textSize="@dimen/_13ssp" />
+            <!-- smoke -->
+            <RelativeLayout
+                android:id="@+id/rl_smoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_firstname"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Do you smoke,if so how much"
+                    android:textColorHint="@android:color/black"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center|left"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_10ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+            <!-- drink -->
+            <RelativeLayout
+                android:id="@+id/rl_drink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_email"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Do you drink,if so how much"
+                    android:textColorHint="@android:color/black"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_drink"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="text|textCapWords"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_10ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+            <!-- mobile -->
+            <RelativeLayout
+                android:id="@+id/rl_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_email"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Do you use recreational drugs, if so which"
+                    android:textColorHint="@android:color/black"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:inputType="text|textCapWords"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_10ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+            <!-- Belief -->
+            <RelativeLayout
+                android:id="@+id/rl_belief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_mobile"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/floating_bg">
+
+                    <textfont.TextViewLight
+                        android:id="@+id/edit_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:gravity="center|left"
+
+                        android:inputType="text|textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Select Response"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <textfont.TextViewLight
+                    android:id="@+id/tv_belief"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:background="#ffffff"
+                    android:inputType="text|textCapWords"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Beliefs"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+            <!-- preference -->
+            <RelativeLayout
+                android:id="@+id/rl_pref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_mobile"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/floating_bg">
+
+                    <textfont.TextViewLight
+                        android:id="@+id/edit_pref"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:gravity="center|left"
+
+                        android:inputType="text|textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Female"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <textfont.TextViewLight
+                    android:id="@+id/tv_pref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:background="#ffffff"
+                    android:inputType="text|textCapWords"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="What is your sexual preference"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+            <!-- education -->
+            <RelativeLayout
+                android:id="@+id/rl_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_mobile"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/floating_bg">
+
+                    <textfont.TextViewLight
+                        android:id="@+id/edit_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:gravity="center|left"
+
+                        android:inputType="text|textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Doctrait"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <textfont.TextViewLight
+                    android:id="@+id/tv_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:background="#ffffff"
+                    android:inputType="text|textCapWords"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Highest Educational Attainment"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+            <!-- occupation -->
+            <RelativeLayout
+                android:id="@+id/rl_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_firstname"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Occupation"
+                    android:textColorHint="@android:color/black"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center|left"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_10ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+            <!-- religion -->
+            <RelativeLayout
+                android:id="@+id/rl_religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_mobile"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/floating_bg">
+
+                    <textfont.TextViewLight
+                        android:id="@+id/edit_religion"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:gravity="center|left"
+
+                        android:inputType="text|textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Select Response"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <textfont.TextViewLight
+                    android:id="@+id/tv_religion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:background="#ffffff"
+                    android:inputType="text|textCapWords"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Religion"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+            <!-- interest -->
+            <RelativeLayout
+                android:id="@+id/rl_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/floating_bg">
+
+                    <textfont.TextViewLight
+                        android:id="@+id/edit_interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:gravity="center|left"
+
+                        android:inputType="text|textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Select Response"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <textfont.TextViewLight
+                    android:id="@+id/tv_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:background="#ffffff"
+                    android:inputType="text|textCapWords"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Interests"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+            <!-- Preference -->
+            <RelativeLayout
+                android:id="@+id/rl_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_firstname"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Preference"
+                    android:textColorHint="@android:color/black"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_preference"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center|left"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_10ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+            <!-- needs -->
+            <RelativeLayout
+                android:id="@+id/rl_need"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_mobile"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@drawable/floating_bg">
+
+                    <textfont.TextViewLight
+                        android:id="@+id/edit_need"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:gravity="center|left"
+                        android:inputType="text|textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Select Response"
+                        android:textSize="@dimen/_10ssp" />
+                </RelativeLayout>
+
+                <textfont.TextViewLight
+                    android:id="@+id/tv_need"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:background="#ffffff"
+                    android:inputType="text|textCapWords"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Needs"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+            <!-- message -->
+            <RelativeLayout
+                android:id="@+id/rl_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_firstname"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Type Message"
+                    android:textColorHint="@android:color/black"
+                    app:hintTextAppearance="@style/HintTextStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center|left"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_10ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</layout>

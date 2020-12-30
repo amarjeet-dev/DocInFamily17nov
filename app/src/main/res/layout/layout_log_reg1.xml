@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/background"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/statiscope"/>
+    <textfont.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:text="Healthcare team not hearing your concerns?"
+        android:textColor="@color/white_black"
+        android:textSize="@dimen/_11ssp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nursesp"/>
+    <textfont.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:text="Don't understand your treatment plan?"
+        android:textColor="@color/white_black"
+        android:textSize="@dimen/_11ssp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/peopell"/>
+    <textfont.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't know what your doctors and\nnurse are doing? or why?"
+        android:textColor="@color/white_black"
+        android:gravity="center"
+        android:id="@+id/tv3"
+        android:textSize="@dimen/_11ssp"/>
+</LinearLayout>
+</layout>

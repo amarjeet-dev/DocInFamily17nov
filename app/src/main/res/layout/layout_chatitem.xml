@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/royal_blue"
+        app:riv_border_color="@color/white"
+        app:riv_corner_radius="@dimen/_8sdp"
+        app:riv_mutate_background="true"
+        app:riv_oval="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:id="@+id/rl_text"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:gravity="center"
+        >
+
+        <textfont.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:id="@+id/tv_name"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white_black"
+            android:textSize="@dimen/_13ssp"
+            android:layout_toRightOf="@+id/iv_help"
+            android:layout_marginLeft="@dimen/_5sdp"/>
+        <textfont.TextViewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:layout_below="@+id/tv_name"
+            android:id="@+id/tv_msg"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white_black"
+            android:textSize="@dimen/_11ssp"
+            android:layout_toRightOf="@+id/iv_help"
+            android:layout_marginLeft="@dimen/_5sdp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_right_arrow"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/grey_white"
+        android:layout_below="@+id/rl_text"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_55sdp"/>
+</RelativeLayout>
+</layout>

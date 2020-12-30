@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/background"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:gravity="center"
+        android:background="@drawable/rect">
+    <ImageView
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:background="@drawable/care"/>
+    </RelativeLayout>
+    <textfont.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv4"
+        android:text="You've come to the right place! we can help."
+        android:textColor="@color/white_black"
+        android:textSize="@dimen/_11ssp"/>
+    <textfont.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let us be your"
+        android:id="@+id/tv5"
+        android:textColor="@color/royal_blue_whit"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_11ssp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:layout_marginTop="@dimen/_5sdp"/>
+</LinearLayout>
+</layout>

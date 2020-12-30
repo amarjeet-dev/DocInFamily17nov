@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "357738027208",
+    "firebase_url": "https://docinfamily-dd8fb.firebaseio.com",
+    "project_id": "docinfamily-dd8fb",
+    "storage_bucket": "docinfamily-dd8fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357738027208:android:612b8c97696264bb136dfd",
+        "android_client_info": {
+          "package_name": "com.e.docinfamily17nov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357738027208-uj71npes9fpp7n67rtl436boem19kie6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.docinfamily17nov",
+            "certificate_hash": "7819a8815cbe4c1d43e97cf4ecb653c2ec667d6a"
+          }
+        },
+        {
+          "client_id": "357738027208-6tkoil29oqqk3j1jlv8edj2qsg6ei8qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoR1YPbie-Xntti0aYnj8EuT6vCgOSEm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357738027208-6tkoil29oqqk3j1jlv8edj2qsg6ei8qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
